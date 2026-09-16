@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>💌 Valentine DigiBouquet · ngl style</title>
+  <title>💌 Valentine DigiBouquet · NGL style</title>
   <style>
     * {
       margin: 0;
@@ -21,10 +21,11 @@
       padding: 2rem 1.5rem;
     }
 
+    /* main card */
     .valentine-card {
-      max-width: 1150px;
+      max-width: 1100px;
       width: 100%;
-      background: rgba(255, 245, 240, 0.92);
+      background: rgba(255, 245, 240, 0.9);
       backdrop-filter: blur(8px);
       border-radius: 48px 48px 32px 32px;
       box-shadow: 0 25px 40px -12px rgba(160, 60, 60, 0.35), 0 0 0 1px #ffc1c1 inset;
@@ -60,6 +61,7 @@
       padding-bottom: 1rem;
     }
 
+    /* step indicator */
     .steps {
       display: flex;
       justify-content: center;
@@ -93,6 +95,7 @@
       font-size: 1.2rem;
     }
 
+    /* main grid */
     .bouquet-builder {
       display: grid;
       grid-template-columns: 1.2fr 1fr;
@@ -106,6 +109,7 @@
       }
     }
 
+    /* flower panel */
     .flower-panel {
       background: #fffbfb;
       border-radius: 32px;
@@ -169,6 +173,7 @@
       background: #ffe7e7;
     }
 
+    /* selected bouquet preview */
     .bouquet-preview {
       background: #fef5f5;
       border-radius: 28px;
@@ -218,6 +223,7 @@
       color: #8f2e2e;
     }
 
+    /* letter panel */
     .letter-panel {
       background: #fcf3ea;
       border-radius: 32px;
@@ -245,7 +251,6 @@
       border-left: 8px solid #b48b6b;
       margin-bottom: 1rem;
       flex: 1;
-      transition: border-color 0.2s, background 0.2s;
     }
 
     .letter-paper textarea {
@@ -289,6 +294,7 @@
       transform: scale(1.1);
     }
 
+    /* recipient & ngl style */
     .recipient-area {
       margin-top: 1rem;
     }
@@ -318,129 +324,7 @@
       box-shadow: 0 0 0 3px #f3ddd0;
     }
 
-    /* Attachments section */
-    .attachments {
-      margin-top: 1.2rem;
-      padding-top: 1rem;
-      border-top: 1px dashed #dbb8a4;
-    }
-
-    .attachments h4 {
-      font-size: 0.95rem;
-      color: #7b523b;
-      margin-bottom: 0.6rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .image-upload-row {
-      display: flex;
-      gap: 0.6rem;
-      margin-bottom: 0.8rem;
-      flex-wrap: wrap;
-    }
-
-    .image-slot {
-      width: 70px;
-      height: 70px;
-      border-radius: 14px;
-      border: 2px dashed #dbb8a4;
-      background: #fffaf5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      transition: 0.15s;
-      font-size: 1.4rem;
-      color: #c9a48e;
-    }
-
-    .image-slot:hover {
-      border-color: #b87b5c;
-      background: #fff2e8;
-    }
-
-    .image-slot img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .image-slot .remove-img {
-      position: absolute;
-      top: 2px;
-      right: 2px;
-      background: rgba(160, 60, 60, 0.8);
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 18px;
-      height: 18px;
-      font-size: 11px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-    }
-
-    .image-slot input[type="file"] {
-      display: none;
-    }
-
-    .music-row {
-      display: flex;
-      gap: 0.6rem;
-      flex-wrap: wrap;
-      margin-top: 0.4rem;
-    }
-
-    .music-slot {
-      background: #fffaf5;
-      border: 2px dashed #dbb8a4;
-      border-radius: 14px;
-      padding: 0.5rem 0.8rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      cursor: pointer;
-      font-size: 0.8rem;
-      color: #8b5e4b;
-      transition: 0.15s;
-      flex: 1;
-      min-width: 130px;
-    }
-
-    .music-slot:hover {
-      border-color: #b87b5c;
-      background: #fff2e8;
-    }
-
-    .music-slot input[type="file"] {
-      display: none;
-    }
-
-    .music-slot .music-name {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 90px;
-      font-size: 0.75rem;
-    }
-
-    .music-slot .remove-music {
-      background: none;
-      border: none;
-      color: #b35e5e;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-left: auto;
-      padding: 0 2px;
-    }
-
+    /* agreement & generate */
     .agreement {
       background: #f9ede4;
       border-radius: 24px;
@@ -503,6 +387,7 @@
       filter: grayscale(0.4);
     }
 
+    /* generated link box */
     .link-box {
       background: #fff4ea;
       border-radius: 28px;
@@ -570,6 +455,7 @@
       color: #b28b7a;
     }
 
+    /* ngl style badge */
     .ngl-badge {
       background: #f5d7d7;
       border-radius: 30px;
@@ -584,4 +470,49 @@
     .error-msg {
       color: #c0392b;
       font-size: 0.85rem;
-      margin
+      margin-top: 0.5rem;
+      text-align: center;
+      min-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="valentine-card">
+    <h1>
+      <span>💐</span> DigiBouquet <span>💌</span>
+    </h1>
+    <div class="subhead">
+      Valentine’s edition · ngl-style anonymous response · confidential
+    </div>
+
+    <!-- Step by step visual -->
+    <div class="steps">
+      <div class="step-badge active"><i>1</i> Pick flowers</div>
+      <div class="step-badge"><i>2</i> Write letter</div>
+      <div class="step-badge"><i>3</i> Name recipient</div>
+      <div class="step-badge"><i>4</i> Get link</div>
+    </div>
+
+    <!-- Main builder -->
+    <div class="bouquet-builder">
+      <!-- LEFT: FLOWER SELECTION -->
+      <div class="flower-panel">
+        <h2>🌸 Choose up to 10 flowers</h2>
+        <div class="flower-grid" id="flowerGrid">
+          <!-- 10 flowers, each with emoji and name -->
+          <div class="flower-option" data-flower="daisy" data-emoji="🌼">🌼<span>Daisy</span></div>
+          <div class="flower-option" data-flower="lilac" data-emoji="💜">💜<span>Lilac</span></div>
+          <div class="flower-option" data-flower="sunflower" data-emoji="🌻">🌻<span>Sunflower</span></div>
+          <div class="flower-option" data-flower="peony" data-emoji="🌸">🌸<span>Peony</span></div>
+          <div class="flower-option" data-flower="carnation" data-emoji="🌺">🌺<span>Carnation</span></div>
+          <div class="flower-option" data-flower="rose" data-emoji="🌹">🌹<span>Rose</span></div>
+          <div class="flower-option" data-flower="tulip" data-emoji="🌷">🌷<span>Tulip</span></div>
+          <div class="flower-option" data-flower="lavender" data-emoji="🪻">🪻<span>Lavender</span></div>
+          <div class="flower-option" data-flower="orchid" data-emoji="🌺">🌺<span>Orchid</span></div>
+          <div class="flower-option" data-flower="dahlia" data-emoji="🌼">🌼<span>Dahlia</span></div>
+        </div>
+
+        <!-- Selected bouquet preview -->
+        <div class="bouquet-preview">
+          <h3>Your bouquet <span style="font-weight:400; font-size:0.9rem;">(click ✕ to remove)</span></h3>
+          <div class="flower-tags" id="flower
